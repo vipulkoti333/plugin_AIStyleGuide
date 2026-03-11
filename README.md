@@ -246,7 +246,8 @@ for (RefArchProductVectorSearchService.SearchResponse response : searchResponses
 ```bash
 # Clone the repository
 git clone <your-repo-url>
-cd AgentforceB2C
+cd plugin_AIStyleGuide
+
 
 # Install dependencies
 npm install
