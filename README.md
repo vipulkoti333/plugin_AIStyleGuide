@@ -1,6 +1,6 @@
-# AI Style Guide - Conversational Commerce Assistant (ONLY for POC, not for Production use)
+# AI Style Guide - Conversational Commerce Assistant using RAG (ONLY for POC, not for Production use)
 
-This is a Salesforce B2C Commerce cartridge (`plugin_custom_AIstyleguide`) that provides an AI-powered conversational assistant for e-commerce product discovery and customer engagement. It leverages Salesforce Agentforce Data 360, enhanced Chat API and modern web technologies to create an interactive shopping experience with text and voice capabilities.
+This is a Salesforce B2C Commerce cartridge (`plugin_custom_AIstyleguide`) that provides an AI-powered conversational assistant for e-commerce product discovery and customer engagement. It leverages Salesforce Agentforce, Data 360, enhanced Chat API and modern web technologies to create an interactive shopping experience with text and voice capabilities.
 
 ## Key Features
 
@@ -86,7 +86,7 @@ Navigate to: `https://your-instance.dx.commercecloud.salesforce.com/on/demandwar
 
 ## Deployment
 
-### 1. Data Cloud
+### 1. Data Cloud 
 
 - Go to Data Model tab > New > From Existing
 - Select Master Product > Next
