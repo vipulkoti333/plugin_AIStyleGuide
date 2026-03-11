@@ -1,8 +1,0 @@
-{
-    "hooks": [
-        {
-            "name": "app.template.afterFooter",
-            "script": "~/cartridge/scripts/hooks/afterFooter"
-        }
-    ]
-}

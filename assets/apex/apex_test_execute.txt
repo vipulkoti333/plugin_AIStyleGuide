@@ -1,0 +1,36 @@
+// Create an instance of the input class with the desired search term
+RefArchProductVectorSearchService.SearchRequest searchReq = new RefArchProductVectorSearchService.SearchRequest();
+searchReq.searchTerm = 'show me sunscreens'; // Replace with your desired input
+
+// Add the search request to a list as the invocable method expects a list of inputs
+List<RefArchProductVectorSearchService.SearchRequest> searchRequests =
+    new List<RefArchProductVectorSearchService.SearchRequest>();
+
+searchRequests.add(searchReq);
+
+// Call the invocable method with the list of search requests
+List<RefArchProductVectorSearchService.SearchResponse> searchResponses =
+    RefArchProductVectorSearchService.searchRefArchProducts(searchRequests);
+
+// Iterate through each response and display the results
+for (RefArchProductVectorSearchService.SearchResponse response : searchResponses) {
+    System.debug('Search Term: ' + response.input);
+
+    if (response.results != null && !response.results.isEmpty()) {
+        System.debug('Search Results:');
+
+        for (RefArchProductVectorSearchService.ProductResult product : response.results) {
+            System.debug('---------------------------------------');
+            System.debug('Product ID: ' + product.productId);
+            System.debug('Product Price: ' + product.productPrice);
+            System.debug('Product URL: ' + product.productURL);
+            System.debug('Chunk: ' + product.chunk);
+            System.debug('Product Image: ' + product.productImageURL);
+        }
+
+        System.debug('---------------------------------------');
+        System.debug('Total Products Found: ' + response.results.size());
+    } else {
+        System.debug('No products found for the search term: ' + response.input);
+    }
+}

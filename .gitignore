@@ -6,6 +6,12 @@ dw.json
 node_modules/
 package-lock.json
 
+# Excluded cartridges and modules
+cartridges/app_storefront_base/
+cartridges/bm_app_storefront_base/
+cartridges/plugin_shopper_agent/
+modules/
+
 # IDE and editor folders
 .vscode/
 .cursor/
