@@ -1,0 +1,43 @@
+<isdecorate template="common/layout/page">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        // Add custom CSS if needed
+        // assets.addCss('/css/test.css');
+    </isscript>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="test-message-page">
+                    <h1 class="page-title">
+                        <isif condition="${pdict.pageTitle}">
+                            ${pdict.pageTitle}
+                        <iselse>
+                            Test Page
+                        </isif>
+                    </h1>
+                    
+                    <div class="test-message-content">
+                        <isif condition="${pdict.message}">
+                            <p class="lead">${pdict.message}</p>
+                        <iselse>
+                            <p class="lead">This is a simple test message from the Test-Show controller.</p>
+                        </isif>
+                        
+                        <isif condition="${pdict.additionalInfo}">
+                            <div class="additional-info">
+                                <p>${pdict.additionalInfo}</p>
+                            </div>
+                        </isif>
+                    </div>
+                    
+                    <div class="test-actions">
+                        <a href="${URLUtils.url('Home-Show')}" class="btn btn-primary" role="button">
+                            Go to Home
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</isdecorate>

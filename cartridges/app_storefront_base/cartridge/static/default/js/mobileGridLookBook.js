@@ -1,0 +1,1 @@
+!function(){"use strict";$(document).ready((function(){$("body").on("click",".show-more-button",(function(o){o.preventDefault(),$(this).closest(".look-book-layout").find(".look-book-set2").removeClass("hide-set"),$(this).closest(".look-book-layout").find(".show-more").addClass("d-none")}))}))}();

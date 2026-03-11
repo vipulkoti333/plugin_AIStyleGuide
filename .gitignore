@@ -1,0 +1,33 @@
+# Environment variables and sensitive data
+.env
+dw.json
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# IDE and editor folders
+.vscode/
+.cursor/
+.claude/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Build outputs
+dist/
+build/
+*.log
+
+# Other hidden files and folders
+.*/
