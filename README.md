@@ -24,8 +24,7 @@ This package is intended to demonstrate and illustrate the Salesforce Agentforce
 
 ## Architecture Overview
 
-<img width="8192" height="7266" alt="Salesforce Agentforce-2026-03-28-003757" src="https://github.com/user-attachments/assets/c8ab01e0-cf63-4e23-99f4-9c641673341f" />
-
+<img width="8192" height="7266" alt="Salesforce Agentforce-2026-03-28-004044" src="https://github.com/user-attachments/assets/cefaac2c-3df4-4cfb-901f-5cda82ce2a32" />
 
 ### Cartridge Structure
 
